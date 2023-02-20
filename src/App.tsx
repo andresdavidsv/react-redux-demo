@@ -38,12 +38,8 @@ export const App = () => {
       <hr />
       <Routes>
         <Route path="/" element={<Index />} />
-        {token !== '' && (
-          <>
-            <Route path="/home" element={<Home />} />
-            <Route path="/cart" element={<Cart />} />
-          </>
-        )}
+        <Route path="/home" element={token !== '' ? <Home /> : <Index />} />
+        <Route path="/cart" element={token !== '' ? <Cart /> : <Index />} />
       </Routes>
     </div>
   );
