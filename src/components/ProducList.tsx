@@ -31,7 +31,10 @@ export const ProductsList: React.FC<ProductsListProps> = ({ products }) => {
       <div className="row">
         {products.map((product) => {
           return (
-            <div key={product.id} className="col-3 mt-3">
+            <div
+              key={product.id}
+              className="col-12 col-sm-6 col-md-4 col-lg-3 mt-"
+            >
               <h4>{product.name}</h4>
               <p>
                 <b>Price:</b> {product.price}
