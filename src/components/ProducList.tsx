@@ -33,7 +33,7 @@ export const ProductsList: React.FC<ProductsListProps> = ({ products }) => {
           return (
             <div
               key={product.id}
-              className="col-12 col-sm-6 col-md-4 col-lg-3 mt-"
+              className="col-12 col-sm-6 col-md-4 col-lg-3 mt-3"
             >
               <h4>{product.name}</h4>
               <p>
